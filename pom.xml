@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>ExtentReport</module>
+        <module>testNgDemo1</module>
     </modules>
     <!--解决缺少jar启动报错问题-->
     <!--<dependencies>-->
