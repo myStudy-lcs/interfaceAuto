@@ -1,4 +1,5 @@
 testNg基本注解：
 @Test标签
 @BeforeMethod标签和@AfterMethod标签
-
+@BeforeClass标签和@AfterClass标签
+@BeforeSuite标签和@AfterSuite标签
