@@ -1,5 +1,31 @@
-testNg基本注解：
+testNg基本注解：BasicAnnotation类
 @Test标签
 @BeforeMethod标签和@AfterMethod标签
 @BeforeClass标签和@AfterClass标签
 @BeforeSuite标签和@AfterSuite标签
+
+testNg套件：suite包
+类：LoginTest  SuitConfig  suite.xml
+@BeforeSuite标签和@AfterSuite标签
+@BeforeTest标签和@AfterTest标签
+
+testNg忽略测试：IgnoreTest类
+
+testNg组测试：
+1；方法分组：groups包中 GroupsOnMethod类
+@Test(groups = "server")和@Test(groups = "client")
+@BeforeGroups("server")和@AfterGroups("server")
+2；类分组：groups包中 GroupsOnClass1 GroupsOnClass2 GroupsOnClass3 groupsOnClass.xml
+
+testNg异常测试：ExpectedException类
+
+testNg依赖测试：DependTest类
+
+testNg参数化测试之xml文件参数化：parameters包中 PrameterXml类  parameters.xml
+
+testNg参数化测试之dataProvider参数化：parameters包中 DataProviderTest类
+
+testNg多线程测试之 通过注解实现：multiThread包中 MultiThreadOnAnnotation类
+
+testNg多线程测试之 xml文件实现：multiThread包中 MultiThreadOnXml类 multiThread.xml
+

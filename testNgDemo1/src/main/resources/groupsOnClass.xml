@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="groups">
+    <!--跑所有-->
+    <test name="runAll">
+        <classes>
+            <class name="com.alipay.groups.GroupsOnClass1" />
+            <class name="com.alipay.groups.GroupsOnClass2" />
+            <class name="com.alipay.groups.GroupsOnClass3" />
+        </classes>
+    </test>
+    <!--跑指定-->
+    <test name="onlyRunStudent">
+        <!--控制运行部分-->
+        <groups>
+            <run>
+                <!--<include name="student" />-->
+                <include name="teacher" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.alipay.groups.GroupsOnClass1" />
+            <class name="com.alipay.groups.GroupsOnClass2" />
+            <class name="com.alipay.groups.GroupsOnClass3" />
+        </classes>
+    </test>
+
+
+</suite>

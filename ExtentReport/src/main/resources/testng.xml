@@ -17,7 +17,6 @@
 
     <!--添加一个监听器-->
     <listeners>
-        <!--<listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter" />-->
         <listener class-name="com.alipay.extentreport.ExtentTestNGIReporterListener" />
     </listeners>
 </suite>

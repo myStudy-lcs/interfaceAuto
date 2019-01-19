@@ -12,6 +12,10 @@ import org.testng.xml.XmlSuite;
 
 import java.io.File;
 import java.util.*;
+
+/**
+ * 生成测试报告的监听类-通用
+ */
 public class ExtentTestNGIReporterListener implements IReporter{
 //    生成的路径以及文件名
     private static final String OUTPUT_FOLDER = "test-output/";
