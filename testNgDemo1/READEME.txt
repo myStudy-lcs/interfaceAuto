@@ -29,3 +29,4 @@ testNg多线程测试之 通过注解实现：multiThread包中 MultiThreadOnAnn
 
 testNg多线程测试之 xml文件实现：multiThread包中 MultiThreadOnXml类 multiThread.xml
 
+testNg超时测试：TimeOutTest类
