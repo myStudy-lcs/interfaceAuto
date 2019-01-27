@@ -1,0 +1,4 @@
+ExtentReport的使用-->  extentreport.com
+testNG + ExtentReport 生成测试报告
+ExtentTestNGIReporterListener类文件，解决网络墙的问题;只需要配置一次
+执行脚本之后会生成一个index.html报告文件(在test-output包中)
