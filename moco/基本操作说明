@@ -13,3 +13,10 @@ java -jar ./moco-runner-0.11.0-standalone.jar http -p 8888 -c json配置文件
 http协议get方法的mock实现：startupGet.json
 http协议post方法的mock实现：startupPost.json
 注意：以上两者的请求参数配置的区别:queries和forms
+
+带有cookies的get请求 和 post请求：startupCookies.json
+注：带有cookies的post请求的 json数据访问格式;jmeter中bodydata的json格式
+易错点①：response返回格式是json,不能再出现text格式
+易错点②：请求参数中的 中文乱码问题
+
+以上请求都可以使用jmeter进行验证：案例见‘测试计划’
