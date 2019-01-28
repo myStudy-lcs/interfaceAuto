@@ -1,0 +1,23 @@
+[
+  {
+    "description": "一个带有headers信息的post请求",
+    "request": {
+      "uri": "/postWithHeaders",
+      "method": "post",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "json": {
+        "name": "lxm",
+        "age": "28"
+      }
+    },
+    "response": {
+      "headers": {"Content-Type": "text/html;charset=gbk"},
+      "json": {
+        "lxm": "success",
+        "status": "1"
+      }
+    }
+  }
+]

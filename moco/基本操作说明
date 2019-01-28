@@ -19,4 +19,10 @@ http协议post方法的mock实现：startupPost.json
 易错点①：response返回格式是json,不能再出现text格式
 易错点②：请求参数中的 中文乱码问题
 
+带有headers的get请求 和 post请求：startupHeaders.json
+
+mock框架中的重定向：
+
+
+
 以上请求都可以使用jmeter进行验证：案例见‘测试计划’
