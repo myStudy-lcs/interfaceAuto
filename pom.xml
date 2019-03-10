@@ -5,13 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.alipay.stduy</groupId>
-    <artifactId>testNg</artifactId>
+    <artifactId>interfaceAuto</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>ExtentReport</module>
         <module>testNgDemo1</module>
-        <module>moco</module>
     </modules>
     <!--解决缺少jar启动报错问题-->
     <!--<dependencies>-->
