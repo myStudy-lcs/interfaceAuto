@@ -13,6 +13,7 @@
       "text": "一个带有cookies信息的get请求~"
     }
   },
+
   {
     "description": "一个带有cookies的post请求",
     "request": {
@@ -34,6 +35,24 @@
         "status": "1"
       }
     }
+  },
+
+  {
+    "description": "一个返回cookie信息的get请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "headers": {"Content-Type": "text/html;charset=gbk"},
+      "cookies": {
+        "login":"true",
+        "name": "liss"
+      },
+      "text": "恭喜get到cookies信息成功"
+    }
   }
 
 ]
+
+// 用jmeter验证带有cookie信息的get请求或post请求

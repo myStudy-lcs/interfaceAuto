@@ -16,25 +16,23 @@ import java.util.List;
 
 /**
  * @Author ：web-lcs509306
- * @Date ：2019/3/20 - 17:19
+ * @Date   ：2019/3/20 - 17:19
  * 获取一个 get/psot 请求地址的返回数据
  */
 public class RequestTest {
     @Test
     public void getTest() throws IOException {
         /**
-         *@Description  ：发送一个get请求
-         *@Author       ：wb-lcs509306
-         *@Date         ：2019/3/20 - 17:21
-         *@Param        ：[args]
-         *@return       ：void
+         * @Author ：        Created by Alan
+         * @Description ：   发送一个get请求
+         * @Date ：          22:47 — 2019/3/20
+         * @Param ：         []
+         * @return ：        void
          */
         // 请求URL地址
         String url = "http://mbd.baidu.com/newspage/data/landingsuper";
-        // 1 get请求
+        // get请求
         url += "?context=%7B%22nid%22%3A%22news_9106617718834593716%22%7D&n_type=0&p_from=1";
-        // 2 post请求
-
 
         // 封装一个get请求方式
         HttpGet get = new HttpGet(url);
@@ -53,13 +51,12 @@ public class RequestTest {
     @Test
     public void postTest() throws IOException {
         /**
-         *@Description  ：发送一个post请求
-         *@Author       ：wb-lcs509306
-         *@Date         ：2019/3/20 - 17:21
-         *@Param        ：[args]
-         *@return       ：void
+         * @Author ：        Created by Alan
+         * @Description ：   发送一个post请求
+         * @Date ：          22:47 — 2019/3/20
+         * @Param ：         []
+         * @return ：        void
          */
-
         // 请求URL地址
         String url = "http://bkmagicprod.sit.mayibank.net/home/bkcloudfundsTrade/openBalancePay";
         // 封装一个post请求方式
@@ -67,9 +64,9 @@ public class RequestTest {
 
         // post请求 请求参数封装在请求体中(没有参数可以不写)
         List<NameValuePair> parameters = new ArrayList<NameValuePair>();
-        parameters.add(new BasicNameValuePair("context","%7B%22nid%22%3A%22news_9106617718834593716%22%7D"));
-        parameters.add(new BasicNameValuePair("n_type","0"));
-        parameters.add(new BasicNameValuePair("p_from","1"));
+        parameters.add(new BasicNameValuePair("context", "%7B%22nid%22%3A%22news_9106617718834593716%22%7D"));
+        parameters.add(new BasicNameValuePair("n_type", "0"));
+        parameters.add(new BasicNameValuePair("p_from", "1"));
         // 设置参数的请求体
 //        post.setEntity(new UrlEncodedFormEntity(parameters));
 //        url += "?context=%7B%22nid%22%3A%22news_9106617718834593716%22%7D&n_type=0&p_from=1";
