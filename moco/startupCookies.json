@@ -1,11 +1,12 @@
 [
   {
-    "description": "一个带有cookies的get请求",
+    "description": "一个带有cookies的get请求-相当于登录后的操作",
     "request": {
       "uri": "/getWithCookies",
       "method": "get",
       "cookies": {
-        "login": "true"
+        "login": "true",
+        "password": "123"
       }
     },
     "response": {
@@ -38,7 +39,7 @@
   },
 
   {
-    "description": "一个返回cookie信息的get请求",
+    "description": "一个返回cookie信息的get请求-相当于登录",
     "request": {
       "uri": "/getCookies",
       "method": "get"
@@ -46,13 +47,14 @@
     "response": {
       "headers": {"Content-Type": "text/html;charset=gbk"},
       "cookies": {
-        "login":"true",
-        "name": "liss"
+        "login": "true",
+        "password": "123"
       },
-      "text": "恭喜get到cookies信息成功"
+      "text": "mock一个get请求 获取cookies信息"
     }
   }
 
 ]
 
 // 用jmeter验证带有cookie信息的get请求或post请求
+// json中不能有注释代码,不然编译moco执行失败
