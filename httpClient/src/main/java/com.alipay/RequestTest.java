@@ -16,7 +16,7 @@ import java.util.List;
 
 /**
  * @Author ：web-lcs509306
- * @Date   ：2019/3/20 - 17:19
+ * @Date ：2019/3/20 - 17:19
  * 获取一个 get/psot 请求地址的返回数据
  */
 public class RequestTest {
@@ -30,9 +30,9 @@ public class RequestTest {
          * @return ：        void
          */
         // 请求URL地址
-        String url = "http://mbd.baidu.com/newspage/data/landingsuper";
+        String url = "https://tieba.baidu.com/f";
         // get请求
-        url += "?context=%7B%22nid%22%3A%22news_9106617718834593716%22%7D&n_type=0&p_from=1";
+        url += "?fr=ala0&kw=%B2%E2%CA%D4%B9%A4%B3%CC%CA%A6&tpl=5";
 
         // 封装一个get请求方式
         HttpGet get = new HttpGet(url);
