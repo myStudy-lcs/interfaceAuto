@@ -7,9 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="extentReport" />
-        <module name="ExtentReport" />
         <module name="httpClient" />
+        <module name="javaAutomation" />
         <module name="testNgDemo1" />
+        <module name="ExtentReport" />
       </profile>
     </annotationProcessing>
   </component>
