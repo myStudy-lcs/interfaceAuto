@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>ExtentReport</module>
+        <module>extentReport</module>
         <module>testNgDemo1</module>
         <module>httpClient</module>
         <module>javaAutomation</module>
