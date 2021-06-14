@@ -9,26 +9,26 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>extentReport</module>
+        <module>ExtentReport</module>
         <module>testNgDemo1</module>
         <module>httpClient</module>
+        <module>javaAutomation</module>
+        <module>javaAutomation</module>
         <module>javaAutomation</module>
     </modules>
     <!--解决缺少jar启动报错问题-->
     <!--<dependencies>-->
-        <!--<dependency>-->
-            <!--<groupId>com.google.guava</groupId>-->
-            <!--<artifactId>guava</artifactId>-->
-            <!--<version>23.0</version>-->
-        <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>com.google.guava</groupId>-->
+    <!--<artifactId>guava</artifactId>-->
+    <!--<version>23.0</version>-->
+    <!--</dependency>-->
     <!--</dependencies>-->
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.0.0-beta3</version>
-            <scope>compile</scope>
+            <version>6.10</version>
         </dependency>
     </dependencies>
-
 </project>

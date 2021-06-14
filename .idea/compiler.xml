@@ -8,10 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="extentReport" />
         <module name="httpClient" />
+        <module name="chapter5" />
         <module name="testNgDemo1" />
-        <module name="Chapter5" />
         <module name="ExtentReport" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Chapter5" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
