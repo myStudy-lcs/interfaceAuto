@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
  * @Date: 2021/6/15 7:48
  * @Email: lcs247735486@163.com
  **/
-/*忽略测试*/
+/*TestNG忽略测试*/
 public class IgnoreTest {
     @Test
     public void ignore1() {
