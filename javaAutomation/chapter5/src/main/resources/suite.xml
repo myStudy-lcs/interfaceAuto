@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--套件测试驱动文件-->
+<suite name="suite">
+    <test name="login">
+        <classes>
+            <class name="com.alipay.testng.suite.SuitConfig"/>
+            <class name="com.alipay.testng.suite.LoginTest"/>
+        </classes>
+    </test>
+    <test name="pay">
+        <classes>
+            <class name="com.alipay.testng.suite.SuitConfig"/>
+            <class name="com.alipay.testng.suite.PayTest"/>
+        </classes>
+    </test>
+
+<!--    &lt;!&ndash;第2种写法&ndash;&gt;-->
+<!--    <test name="test">-->
+<!--        <classes>-->
+<!--            <class name="com.alipay.testng.suite.PayTest"/>-->
+<!--            <class name="com.alipay.testng.suite.LoginTest"/>-->
+<!--            <class name="com.alipay.testng.suite.SuitConfig"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    &lt;!&ndash;不引入SuitConfig配置&ndash;&gt;-->
+<!--    <test name="test">-->
+<!--        <classes>-->
+<!--            <class name="com.alipay.testng.suite.PayTest"/>-->
+<!--            <class name="com.alipay.testng.suite.LoginTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

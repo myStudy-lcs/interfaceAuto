@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--组测试驱动文件-->
+<suite name="groups">
+
+    <!--触发所有的类分组-->
+    <!--    <test name="runAll">-->
+    <!--        <classes>-->
+    <!--            <class name="com.alipay.testng.groups.GroupsOnClass1"/>-->
+    <!--            <class name="com.alipay.testng.groups.GroupsOnClass2"/>-->
+    <!--            <class name="com.alipay.testng.groups.GroupsOnClass3"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--触发指定的类分组-->
+    <test name="runPart">
+        <!--控制运行部分-->
+        <groups>
+            <run>
+                <include name="teacher"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.alipay.testng.groups.GroupsOnClass1"/>
+            <class name="com.alipay.testng.groups.GroupsOnClass2"/>
+            <class name="com.alipay.testng.groups.GroupsOnClass3"/>
+        </classes>
+    </test>
+
+</suite>
