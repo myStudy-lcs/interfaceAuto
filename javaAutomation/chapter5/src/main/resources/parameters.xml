@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite">
+    <test name="parameters">
+        <classes>
+            <class name="com.alipay.testng.parameter.ParameterXml"/>
+
+            <parameter name="name" value="李逵"/>
+            <parameter name="age" value="22"/>
+        </classes>
+    </test>
+</suite>
