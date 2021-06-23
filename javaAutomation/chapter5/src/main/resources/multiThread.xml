@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--xml文件实现多线程测试-->
+<!--
+***methods级别(用的较多)：
+        所有用例都可以在不同的线程下去执行
+**tests级别(用的较多)：
+        不同的test tag(标签)下的用例可以在不同的线程下执行**
+        相同的test tag下的用例只能在同一个线程中去执行
+*classes级别：
+        不同的class tag下的用例可以在不同的线程中执行
+        相同的class tag下的用例在同一个线程中执行
+
+thread-count：代表了最大并发线程数
+xml文件配置这种方式不能指定线程池，只有方法上才可以指定线程池
+-->
+
+<suite name="thread" parallel="methods" thread-count="2">
+    <test name="test">
+        <classes>
+            <class name="com.alipay.testng.multiThread.MultiThreadOnXml"/>
+        </classes>
+    </test>
+</suite>
+
+<!--
+<suite name="threads" parallel="tests" thread-count="2">
+    <test name="thread1">
+        <classes>
+            <class name="com.alipay.testng.multiThread.MultiThreadOnXml"/>
+        </classes>
+    </test>
+    <test name="thread2">
+        <classes>
+            <class name="com.alipay.testng.multiThread.MultiThreadOnXml"/>
+            <class name="com.alipay.testng.multiThread.BasicAnnotationOnXml"/>
+        </classes>
+    </test>
+</suite>-->
+
+<!--
+<suite name="threads" parallel="classes" thread-count="2">
+    <test name="thread1">
+        <classes>
+            <class name="com.alipay.testng.multiThread.BasicAnnotationOnXml"/>
+            <class name="com.alipay.testng.multiThread.MultiThreadOnXml"/>
+        </classes>
+    </test>
+    <test name="thread2">
+        <classes>
+            <class name="com.alipay.testng.multiThread.MultiThreadOnXml"/>
+        </classes>
+    </test>
+</suite>-->
