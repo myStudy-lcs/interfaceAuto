@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="extentReport" />
         <module name="httpClient" />
+        <module name="chapter6" />
         <module name="chapter5" />
         <module name="ExtentReport" />
       </profile>
