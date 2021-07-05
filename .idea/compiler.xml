@@ -10,11 +10,11 @@
         <module name="httpClient" />
         <module name="chapter6" />
         <module name="chapter5" />
-        <module name="ExtentReport" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Chapter5" target="1.5" />
+      <module name="ExtentReport" target="6" />
       <module name="testNgDemo1" target="1.5" />
     </bytecodeTargetLevel>
   </component>

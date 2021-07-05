@@ -26,9 +26,10 @@ public class TestMethodsDemo {
         Assert.assertEquals("abc", "abc");
     }
 
+    //    日志记录
     @Test
     public void logDemo() {
-        Reporter.log("我们自己写的日志--");
-        throw new RuntimeException("我们自己的运行时异常~~");
+        Reporter.log("自己的log日志--");
+        throw new RuntimeException("自己的运行时异常~~");
     }
 }
