@@ -11,10 +11,9 @@
     },
     "response": {
       "headers": {"Content-Type": "text/html;charset=gbk"},
-      "text": "一个带有cookies信息的get请求~"
+      "text": "一个带有cookies信息才能访问的get请求~"
     }
   },
-
   {
     "description": "一个带有cookies的post请求",
     "request": {
@@ -37,9 +36,8 @@
       }
     }
   },
-
   {
-    "description": "一个返回cookie信息的get请求-相当于登录",
+    "description": "一个返回cookies信息的get请求-相当于登录",
     "request": {
       "uri": "/getCookies",
       "method": "get"
@@ -53,8 +51,4 @@
       "text": "mock一个get请求 获取cookies信息"
     }
   }
-
 ]
-
-// 用jmeter验证带有cookie信息的get请求或post请求
-// json中不能有注释代码,不然编译moco执行失败

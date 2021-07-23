@@ -9,10 +9,6 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>ExtentReport</module>
-        <module>httpClient</module>
-        <module>javaAutomation</module>
-        <module>javaAutomation</module>
         <module>javaAutomation</module>
     </modules>
     <!--解决缺少jar启动报错问题-->
